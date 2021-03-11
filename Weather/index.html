@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="backgroundImg">       
+
+        <header><!--HEADER-->
+            <nav class="navbar padding flex-center">
+                <ul>
+                    <li>
+                    <button class="header_btn ">
+                    <img src="./Assets/icon.jpg" class="nav-icon">
+                    </button>
+                    </li>
+                </ul>
+                <ul class="ulHeaderRight">  
+                    <li>“Worse than your every day weather APP”</li>
+                </ul>
+            </nav>
+        </header><!--HEADER ENDS HERE-->
+
+        <main class="mainSection padding"><!--MAIN-->
+            <section class="wheatherDays flex-center">
+            </section>
+            
+            <section class="dayWidget">
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="divDay"></div>
+                        <button class="speedConverter"></button>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <button onClick="tempConverter()" id="tempConverter" class="openDay">Kelvin</button> 
+                <button onClick="reload()" id="celsiusConverter" class="openDay">Celsius</button> 
+
+                <!-- <button onClick="windConverter()" id="windBtnConverter" class="openDay">km/h</button>
+                <button onClick="reload()" id="windBackConverter" class="openDay">m/h</button> -->
+            </section>
+
+        </main><!--MAIN ENDS HERE-->
+    </section>
+    
+</body>
+
+<script src="./displayWeather.js"></script>
+</html>
